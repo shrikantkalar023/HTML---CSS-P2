@@ -1,0 +1,14 @@
+html {
+  /*62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
+
+.box {
+  /* width:50% -> 50% of the width of the parent */
+  /*width:10em 10 x font size of current element or parent.. 160px*/
+  /*width:10rem 10 x font size of root element */
+  width: 15rem;
+  height: 100vh;
+  background-color: gold;
+  border-top: 3px solid orange;
+}
