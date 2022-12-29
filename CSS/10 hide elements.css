@@ -1,0 +1,8 @@
+body {
+  margin: 10px;
+}
+
+.fst {
+  /*display: none;*/
+  visibility: hidden;
+}
