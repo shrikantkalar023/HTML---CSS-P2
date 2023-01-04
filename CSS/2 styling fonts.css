@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "avenir";
+  src: url("fonts/Avenir/avenir-black-webfont.woff2") format("woff2"),
+    url("fonts/Avenir/avenir-black-webfont.woff") format("woff");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+body {
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: avenir, "Times New Roman", Times, serif;
+}
+
+p {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1rem;
+  color: #444;
+}
