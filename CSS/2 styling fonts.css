@@ -4,20 +4,57 @@
     url("fonts/Avenir/avenir-black-webfont.woff") format("woff");
   font-weight: bolder;
   font-style: normal;
+  font-display: optional;
+}
+
+html {
+  /*62.5% of 16px = 10px*/
+  font-size: 100%;
 }
 
 body {
   margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  /*sys font stack implementation
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;*/
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Roboto, avenir, "Times New Roman", Times, serif;
+  word-spacing: -11px;
+  letter-spacing: -1px;
 }
 
 h1 {
-  font-family: avenir, "Times New Roman", Times, serif;
+  font-size: 4.209rem;
+  margin: 3rem 0 1rem;
+}
+
+h2 {
+  font-size: 3.157rem;
 }
 
 p {
   font-weight: normal;
-  font-style: italic;
-  font-size: 1rem;
-  color: #444;
+  font-style: normal;
+  color: #333;
+  width: 50ch;
+}
+
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 130%;
+  }
+  p {
+    width: 80ch;
+  }
 }
