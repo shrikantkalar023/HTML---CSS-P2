@@ -1,0 +1,12 @@
+img {
+  width: 100px;
+}
+
+body {
+  background: url(../images/constellation.svg);
+}
+
+.icon {
+  font-size: 2rem;
+  color: bisque;
+}

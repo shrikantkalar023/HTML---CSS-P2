@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High Density Screens</title>
+    <style>
+      img {
+        /* width: 100vw; */
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="../images/meal.jpg"
+      alt="A bowl of Salmon Curry"
+      srcset="
+        ../images/meal_resized/meal-full_w200.jpg   200w,
+        ../images/meal_resized/meal-full_w607.jpg   607w,
+        ../images/meal_resized/meal-full_w875.jpg   875w,
+        ../images/meal_resized/meal-full_w1149.jpg 1149w,
+        ../images/meal_resized/meal-full_w1400.jpg 1400w
+      "
+      sizes="
+      (max-width: 400px) 100vw,
+      (max-width: 700px) 50vw,
+      (max-width: 1000px) 33vw,
+      (max-width: 1200px) 25vw,
+      20vw
+      "
+    />
+
+    <!--<img src="../images/meal.jpg" alt="A bowl of Salmon Curry" />-->
+  </body>
+</html>
