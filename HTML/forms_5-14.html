@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/normalize.css" />
+    <link rel="stylesheet" href="../CSS/forms_5.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <title>Forms 5</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <input
+          type="email"
+          placeholder="Email"
+          autofocus
+          value="shrikantkalar@gmail.com"
+        />
+        <textarea placeholder="Please leave a comment..">Comment..</textarea>
+        <input
+          type="text"
+          placeholder="Countries"
+          list="countries"
+          autocomplete="off"
+          required
+          minlength="3"
+          maxlength="12"
+        />
+        <datalist id="countries">
+          <option data-value="1">Australia</option>
+          <option>Canada</option>
+          <option>India</option>
+          <option>USA</option>
+        </datalist>
+      </fieldset>
+      <section>
+        <h2>Course Details</h2>
+        <select>
+          <!--<option value="">Select a Course...</option>-->
+          <optgroup label="Front-end Courses">
+            <option value="1" selected>HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">JavaScript</option>
+          </optgroup>
+          <optgroup label="Back-end Courses">
+            <option value="1" selected>Python</option>
+            <option value="2">Django</option>
+            <option value="3">AWS</option>
+          </optgroup>
+        </select>
+        <div>
+          <input type="checkbox" id="front-end" checked />
+          <label class="label-inline" for="front-end">Front-end</label>
+        </div>
+        <div>
+          <input type="checkbox" id="back-end" disabled />
+          <label class="label-inline" for="back-end">Back-end</label>
+        </div>
+        <div>
+          <input type="radio" name="membership" id="silver" checked />
+          <label for="silver" class="label-inline">Silver</label>
+        </div>
+        <div>
+          <input type="radio" name="membership" id="Gold" disabled />
+          <label for="Gold" class="label-inline">Gold</label>
+        </div>
+        <input type="range" min="0" max="100" value="90" />
+        <input type="file" multiple accept="image/*" />
+      </section>
+      <input type="number" min="0" max="5" />
+      <input type="hidden" name="course-id" value="1234" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
