@@ -9,24 +9,32 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
     />-->
-    <link rel="stylesheet" href="../CSS/forms_exercise1.css" />
+    <link rel="stylesheet" href="../CSS/forms_exercise1v1.css" />
     <title>Forms Exercise 1</title>
   </head>
   <body>
-    <form action="submit">
-      <section>
-        <h2>Please sign in</h2>
+    <form>
+      <h2>Please sign in</h2>
+      <section class="input">
         <input
+          class="inp-f"
           type="email"
           name="Email"
           placeholder="Email address"
           autofocus
         />
-        <input type="password" name="Password" placeholder="Password" />
-        <section>
-          <input type="checkbox" id="Rm" />
-          <label for="Rm">Remember me</label>
-        </section>
+        <input
+          class="inp-f"
+          type="password"
+          name="Password"
+          placeholder="Password"
+        />
+      </section>
+      <section>
+        <input type="checkbox" id="Rm" />
+        <label for="Rm">Remember me</label>
+      </section>
+      <section class="input">
         <button type="submit">Sign in</button>
       </section>
       <p>Copyright © 2020</p>
