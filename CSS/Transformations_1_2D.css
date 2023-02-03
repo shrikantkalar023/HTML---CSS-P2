@@ -26,6 +26,6 @@ body {
   transform-origin: 0 50%;
 }
 
-.box:nth-child(2):hover {
+.container:hover .box:nth-child(2) {
   transform: rotateX(45deg);
 }
